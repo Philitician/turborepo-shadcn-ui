@@ -8,15 +8,17 @@
     "dev": "storybook dev -p 6006 --no-open",
     "build": "storybook build",
     "preview-storybook": "serve storybook-static",
+    "anima:sync": "anima sync --storybook",
     "lint": "TIMING=1 eslint \"**/*.{ts,tsx,js,jsx}\" --fix",
     "clean": "rm -rf .turbo"
   },
   "dependencies": {
-    "ui": "workspace:*",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "ui": "workspace:*"
   },
   "devDependencies": {
+    "@animaapp/anima-cli": "^1.0.6",
     "@storybook/addon-docs": "^7.0.6",
     "@storybook/addon-essentials": "^7.0.6",
     "@storybook/addon-links": "^7.0.6",
@@ -31,7 +33,7 @@
     "serve": "^14.2.0",
     "storybook": "^7.0.6",
     "tailwindcss": "^3.3.1",
-    "typescript": "^5.0.4",
-    "vite": "^4.3.1"
+    "typescript": "^5.1.3",
+    "vite": "^4.3.9"
   }
 }
