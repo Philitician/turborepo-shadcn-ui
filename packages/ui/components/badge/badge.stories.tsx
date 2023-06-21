@@ -7,7 +7,7 @@ const meta: Meta<typeof Badge> = {
   component: Badge,
   argTypes: {
     variant: {
-      options: ["default", "secondary", "destructive", "outline"],
+      options: ["default", "secondary", "destructive", "outline", "green"],
       control: { type: "select" },
     },
   },
@@ -37,5 +37,11 @@ export const Destructive = {
 export const Outline = {
   args: {
     variant: "outline",
+  },
+};
+
+export const Green = {
+  args: {
+    variant: "green",
   },
 };
